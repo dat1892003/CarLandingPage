@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCenter - Cửa Hàng Xe Hơi Cao Cấp</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed-top bg-white shadow-sm">
+        <!-- Top Bar -->
+        <div class="top-bar d-none d-md-block border-bottom">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="col-md-6">
+                        <div class="d-flex gap-4 text-muted small">
+                            <div>
+                                <i class="bi bi-telephone"></i>
+                                <span class="ms-2">0901 234 567</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-envelope"></i>
+                                <span class="ms-2">info@autocenter.vn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <span class="text-muted small">Giờ làm việc: 8:00 - 20:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary fs-4" href="#">AutoCenter</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featured">Bộ Sưu Tập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Dịch Vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Về Chúng Tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Đặt Lịch Hẹn</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-10 mx-auto text-center text-white" data-aos="fade-up">
+                    <h1 class="display-3 fw-bold mb-4">Trải Nghiệm Đẳng Cấp Xe Hơi</h1>
+                    <p class="lead fs-4 mb-5">
+                        Khám phá bộ sưu tập xe cao cấp hàng đầu. Chất lượng vượt trội, dịch vụ tận tâm.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#featured" class="btn btn-light btn-lg">
+                            Xem Bộ Sưu Tập
+                            <i class="bi bi-chevron-right ms-2"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            Đặt Lịch Lái Thử
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section id="featured" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Xe Nổi Bật</h2>
+                <p class="text-muted col-lg-8 mx-auto">
+                    Khám phá những dòng xe cao cấp được lựa chọn kỹ lưỡng, mang đến trải nghiệm lái xe đẳng cấp
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Car 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card car-card h-100 border-0 shadow-sm" data-car-id="mercedes-s-class">
+                        <div class="card-img-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1707407772603-274cc5cf18f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzZWRhbiUyMGNhcnxlbnwxfHx8fDE3NjA5MTAyNzR8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 class="card-img-top" alt="Mercedes-Benz S-Class">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3">Bán chạy</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mercedes-Benz S-Class</h5>
+                            <p class="card-text text-muted small">Sedan Cao Cấp</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li class="mb-2">
+                                    <i class="bi bi-speedometer2 me-2"></i>3.0L V6
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-fuel-pump me-2"></i>Xăng
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-gear me-2"></i>Tự động
+                                </li>
+                            </ul>
+                            <p class="text-primary fw-bold mb-3">Từ 4.5 tỷ VNĐ</p>
+                            <button class="btn btn-outline-primary w-100 view-detail-btn">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card car-card h-100 border-0 shadow-sm" data-car-id="porsche-911-turbo">
+                        <div class="card-img-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1676112687117-0261d7a84f77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzcG9ydHMlMjBjYXJ8ZW58MXx8fHwxNzYwOTQwMTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 class="card-img-top" alt="Porsche 911 Turbo">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3">Mới về</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Porsche 911 Turbo</h5>
+                            <p class="card-text text-muted small">Xe Thể Thao</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li class="mb-2">
+                                    <i class="bi bi-speedometer2 me-2"></i>3.8L Twin-Turbo
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-fuel-pump me-2"></i>Xăng
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-gear me-2"></i>PDK 8-cấp
+                                </li>
+                            </ul>
+                            <p class="text-primary fw-bold mb-3">Từ 12.8 tỷ VNĐ</p>
+                            <button class="btn btn-outline-primary w-100 view-detail-btn">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card car-card h-100 border-0 shadow-sm" data-car-id="range-rover-sport">
+                        <div class="card-img-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1681331788913-09bb483f91f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXYlMjBjYXIlMjBkcml2aW5nfGVufDF8fHx8MTc2MDk0MDQwMXww&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 class="card-img-top" alt="Range Rover Sport">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Range Rover Sport</h5>
+                            <p class="card-text text-muted small">SUV Hạng Sang</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li class="mb-2">
+                                    <i class="bi bi-speedometer2 me-2"></i>3.0L Mild Hybrid
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-fuel-pump me-2"></i>Dầu diesel
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-gear me-2"></i>Tự động
+                                </li>
+                            </ul>
+                            <p class="text-primary fw-bold mb-3">Từ 6.2 tỷ VNĐ</p>
+                            <button class="btn btn-outline-primary w-100 view-detail-btn">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card car-card h-100 border-0 shadow-sm" data-car-id="tesla-model-s-plaid">
+                        <div class="card-img-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1742940796393-e6a4a9d0ac15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBtb2Rlcm58ZW58MXx8fHwxNzYwOTQwNDAyfDA&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 class="card-img-top" alt="Tesla Model S Plaid">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">Xanh</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tesla Model S Plaid</h5>
+                            <p class="card-text text-muted small">Sedan Điện</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li class="mb-2">
+                                    <i class="bi bi-speedometer2 me-2"></i>Tri Motor
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-fuel-pump me-2"></i>Điện
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-gear me-2"></i>1-cấp
+                                </li>
+                            </ul>
+                            <p class="text-primary fw-bold mb-3">Từ 3.8 tỷ VNĐ</p>
+                            <button class="btn btn-outline-primary w-100 view-detail-btn">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Tại Sao Chọn Chúng Tôi</h2>
+                <p class="text-muted col-lg-8 mx-auto">
+                    Cam kết mang đến trải nghiệm mua sắm xe hơi tốt nhất với dịch vụ hoàn hảo
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-circle bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <i class="bi bi-shield-check fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Bảo Hành Toàn Diện</h5>
+                    <p class="text-muted small">
+                        Chương trình bảo hành 5 năm hoặc 100.000 km cho tất cả các dòng xe
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-circle bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <i class="bi bi-award fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Chất Lượng Đảm Bảo</h5>
+                    <p class="text-muted small">
+                        100% xe chính hãng, kiểm định nghiêm ngặt trước khi bàn giao
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-circle bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <i class="bi bi-tools fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Bảo Dưỡng Miễn Phí</h5>
+                    <p class="text-muted small">
+                        Dịch vụ bảo dưỡng định kỳ miễn phí trong 3 năm đầu tiên
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-circle bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <i class="bi bi-headset fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Hỗ Trợ 24/7</h5>
+                    <p class="text-muted small">
+                        Đội ngũ tư vấn chuyên nghiệp sẵn sàng hỗ trợ bạn mọi lúc mọi nơi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Khách Hàng Nói Gì</h2>
+                <p class="text-muted col-lg-8 mx-auto">
+                    Hàng nghìn khách hàng đã tin tưởng và hài lòng với dịch vụ của chúng tôi
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Dịch vụ tuyệt vời! Đội ngũ tư vấn nhiệt tình và chuyên nghiệp. Chiếc Mercedes mới của tôi thật hoàn hảo."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    NA
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Nguyễn Văn An</h6>
+                                    <small class="text-muted">Doanh nhân</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Quy trình mua xe rất nhanh gọn và minh bạch. Tôi rất hài lòng với chiếc Range Rover của mình."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    TB
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Trần Thị Bình</h6>
+                                    <small class="text-muted">Kiến trúc sư</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="text-muted mb-4">
+                                "Showroom đẹp, xe đa dạng, nhân viên am hiểu sản phẩm. Đây là nơi đáng tin cậy để mua xe cao cấp."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3">
+                                    LM
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Lê Hoàng Minh</h6>
+                                    <small class="text-muted">Giám đốc</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Liên Hệ Với Chúng Tôi</h2>
+                <p class="text-muted">
+                    Để lại thông tin, chúng tôi sẽ liên hệ tư vấn chi tiết cho bạn
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Họ và Tên *</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập họ tên.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập email hợp lệ.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Số Điện Thoại *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                                <div class="invalid-feedback">
+                                    Vui lòng nhập số điện thoại.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="interest" class="form-label">Quan Tâm Đến</label>
+                                <select class="form-select" id="interest">
+                                    <option value="">Chọn dòng xe</option>
+                                    <option value="sedan">Sedan</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="sports">Xe thể thao</option>
+                                    <option value="electric">Xe điện</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Lời Nhắn</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Gửi Thông Tin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">AutoCenter</h5>
+                    <p class="small text-light mb-4">
+                        Hệ thống showroom xe hơi cao cấp hàng đầu Việt Nam với hơn 15 năm kinh nghiệm.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Liên Kết</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Về Chúng Tôi</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Bộ Sưu Tập Xe</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Dịch Vụ</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tin Tức</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Dịch Vụ</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Mua Xe Mới</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Xe Đã Qua Sử Dụng</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Bảo Dưỡng & Sửa Chữa</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tư Vấn Tài Chính</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Phụ Tùng Chính Hãng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Liên Hệ</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-geo-alt-fill me-2 flex-shrink-0"></i>
+                            <span class="text-light">123 Đường Nguyễn Huệ, Q.1, TP.HCM</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-telephone-fill me-2 flex-shrink-0"></i>
+                            <span class="text-light">0901 234 567</span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <i class="bi bi-envelope-fill me-2 flex-shrink-0"></i>
+                            <span class="text-light">info@autocenter.vn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <div class="text-center small text-light">
+                <p class="mb-0">&copy; 2025 AutoCenter. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Detail Modal -->
+    <div class="modal fade" id="carDetailModal" tabindex="-1" aria-labelledby="carDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div>
+                        <h5 class="modal-title fw-bold" id="carDetailModalLabel"></h5>
+                        <p class="text-muted mb-0 small" id="carCategory"></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Image Carousel -->
+                    <div id="carImageCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators" id="carouselIndicators"></div>
+                        <div class="carousel-inner" id="carouselImages"></div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carImageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carImageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- Badge and Price -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div id="carBadge"></div>
+                        <h4 class="text-primary fw-bold mb-0" id="carPrice"></h4>
+                    </div>
+
+                    <!-- Tabs Navigation -->
+                    <ul class="nav nav-tabs mb-3" id="carDetailTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab">
+                                Tổng quan
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">
+                                Thông số kỹ thuật
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab">
+                                Tính năng
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="carDetailTabContent">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                            <p id="carDescription"></p>
+                            <div class="row g-3 mt-2">
+                                <div class="col-6 col-md-3 text-center">
+                                    <div class="bg-light p-3 rounded">
+                                        <i class="bi bi-speedometer2 fs-3 text-primary"></i>
+                                        <p class="small mb-0 mt-2 text-muted">Động cơ</p>
+                                        <p class="fw-bold mb-0 small" id="engineQuick"></p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 text-center">
+                                    <div class="bg-light p-3 rounded">
+                                        <i class="bi bi-fuel-pump fs-3 text-primary"></i>
+                                        <p class="small mb-0 mt-2 text-muted">Nhiên liệu</p>
+                                        <p class="fw-bold mb-0 small" id="fuelQuick"></p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 text-center">
+                                    <div class="bg-light p-3 rounded">
+                                        <i class="bi bi-gear fs-3 text-primary"></i>
+                                        <p class="small mb-0 mt-2 text-muted">Hộp số</p>
+                                        <p class="fw-bold mb-0 small" id="transmissionQuick"></p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 text-center">
+                                    <div class="bg-light p-3 rounded">
+                                        <i class="bi bi-calendar-check fs-3 text-primary"></i>
+                                        <p class="small mb-0 mt-2 text-muted">Năm sản xuất</p>
+                                        <p class="fw-bold mb-0 small" id="yearQuick"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Specs Tab -->
+                        <div class="tab-pane fade" id="specs" role="tabpanel">
+                            <table class="table table-striped">
+                                <tbody id="specsTable"></tbody>
+                            </table>
+                        </div>
+
+                        <!-- Features Tab -->
+                        <div class="tab-pane fade" id="features" role="tabpanel">
+                            <div id="featuresList"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" id="bookTestDriveBtn">
+                        <i class="bi bi-calendar-check me-2"></i>Đặt lịch lái thử
+                    </button>
+                    <button type="button" class="btn btn-success" id="contactBtn">
+                        <i class="bi bi-telephone me-2"></i>Liên hệ ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
